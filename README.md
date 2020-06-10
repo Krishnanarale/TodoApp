@@ -11,3 +11,12 @@ Technologies used in project listed down.
 - Node js
 - Express js
 - MongoDB
+
+# To run
+
+Follwo's Steps.
+- Clone repository.
+- Get into TodoApp directory.
+- Then run "npm install".
+- After that run "node app".
+- Go to "http://localhost:3000/".
