@@ -1,0 +1,30 @@
+/* This is main css file to whole app */
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
+
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    color: white;
+    background-color: darkolivegreen;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+}
+
+hr {
+    background-color: violet;
+}
+
+h3 {
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.list-group-item {
+    margin-bottom: 5px;
+}

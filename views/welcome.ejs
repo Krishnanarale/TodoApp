@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Todo Application</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Task List</h3>
+                <hr>
+                <ul class="list-group">
+                    <% data.forEach(function(item, index){  %>
+                    <li class="list-group-item" onclick="deleteTask('<%= item.id %>')"><%= item.task %></li>
+                    <% }) %>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Add New Task</h3>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label for="task">Task:</label>
+                        <input type="text" class="form-control" placeholder="Enter Task" id="task" name="task">
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Lodded required javascript libraries. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
